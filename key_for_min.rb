@@ -16,7 +16,7 @@ def key_for_min_value(name_hash)
         last_key = key
       end
     end
-    last_key
+    return last_key
   else
     nil
   end
