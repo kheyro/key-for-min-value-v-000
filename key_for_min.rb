@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
 
   if !name_hash.empty?
     name_hash.each do |key, value|
-      if last_value.empty?
+      if last_value
         last_value = value
         next
       end
