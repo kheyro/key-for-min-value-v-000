@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
 
   if !name_hash.empty?
     name_hash.each do |key, value|
-      if defined?(last_value).nil?
+      if defined?(last_value)
         last_value = value
       end
       if value < last_value
