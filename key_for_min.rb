@@ -9,12 +9,13 @@ def key_for_min_value(name_hash)
     name_hash.each do |key, value|
       if !defined? last_value
         last_value = value
-        next
-      end
+      else
+
       if value < last_value
         last_value = value
         last_key = key
       end
+    end
     end
     last_key
   else
